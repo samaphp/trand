@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Handle the website main page.
+ */
+
 class Index extends Controller {
 
   function __construct() {

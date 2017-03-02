@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Handle the website error pages.
+ */
+
 class Errorpage extends Controller {
 
   function __construct() {
