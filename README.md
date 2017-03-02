@@ -13,3 +13,6 @@ This simple PHP application demonstrates a small retail website.
 
 ##License
 [UNLICENSED](http://unlicense.org/).
+
+##Credits
+- MVC code inspired by [@jream](https://github.com/JREAM) with a lot of changes.
