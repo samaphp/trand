@@ -5,12 +5,20 @@ a:hover{text-decoration:underline;}
 h1, span.error-page-404{display:block;font-family: Helvetica, Arial, sans-serif; font-size: 60px; font-weight: 800; color: #000; line-height: 60px; text-transform: uppercase;}
 ul li{line-height:2}
 
+/* General Styles */
 .container{background:#fff;max-width:480px;margin:0 auto;border-bottom:3px solid #d7d7d7}
 .section{padding:12px}
 .pull-side{float:right}
+.btn{cursor:pointer;background:#4CAF50;border:none;padding:7px 12px;color:#fff;font-weight:bold}
+.btn[disabled]{background:#d7d7d7}
 
 #content p{margin:0;line-height:2}
 
 /* Products list */
+.products:after{content:" ";display:block;clear:both}
 .products .product{float:left;width:50%;text-align:center;}
 .products .product h3{font-size:12pt}
+.products .product .price{margin-bottom:7px;}
+
+/* Cart */
+.cart-table tr td{padding:5px;background:#e7e7e7}

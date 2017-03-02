@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /**
  * @file
@@ -29,6 +30,25 @@ class Session
   public static function destroy()
   {
     session_destroy();
+  }
+
+  public static function cart_data()
+  {
+    $cart_items = Session::get('cart_items');
+    if($cart_items){
+      $products_list = Bootstrap::products_list();
+
+      $cartData = array();
+      $cartData['items'] = array();
+      foreach($cart_items as $item){
+        $cartData['items'][] = array('product_id' => $item['product_id'],
+        'qty'=>$item['qty'], 'title'=>$products_list[$item['product_id']]['title'],
+        'price'=>$products_list[$item['product_id']]['price']);
+      }
+      $cartData['count'] = count($cart_items);
+      return $cartData;
+    }else
+      return FALSE;
   }
 
   public static function user_data($username)
