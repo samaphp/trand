@@ -14,7 +14,14 @@ class Index extends Controller {
   function index() {
     $this->view->title = 'Trand Homepage';
     $this->view->render('header');
-    $this->view->render('index');
+
+    // Show custom homepage for loggedin users.
+    if($this->view->user_is_logged_in){
+      $this->view->render('index-user');
+    }else{
+      $this->view->render('index');
+    }
+
     $this->view->render('footer');
   }
 
