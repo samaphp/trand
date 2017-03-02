@@ -38,6 +38,8 @@ class User extends Controller {
       // Unauthorized.
       header("HTTP/1.0 401 Unauthorized");
       // @TODO: Create unauthorized page output.
+      print '401 Unauthorized';
+      exit;
     }
   }
 
