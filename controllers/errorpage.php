@@ -12,6 +12,8 @@ class Errorpage extends Controller {
   }
 
   function index() {
+    header("HTTP/1.0 404 Not Found");
+
     $this->view->title = 'Error Page';
     $this->view->msg = 'Page not found';
     $this->view->render('header');
