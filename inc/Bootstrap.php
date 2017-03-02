@@ -71,6 +71,19 @@ class Bootstrap {
       return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
     }
 
+    public static function products_list($text) {
+      $products = array();
+      $products[112] = array(
+        'title'=>'AKG K712 Headphone',
+        'thumb'=>'assets/images/thumb.akg.png',
+        'price'=>350);
+      $products[113] = array(
+        'title'=>'Sony MDR-MA900 Headphone',
+        'thumb'=>'assets/images/thumb.sony.png',
+        'price'=>210);
+      return $products;
+    }
+
     /**
      * Fetches the $_GET from 'url'
      */

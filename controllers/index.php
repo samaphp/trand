@@ -17,6 +17,7 @@ class Index extends Controller {
 
     // Show custom homepage for loggedin users.
     if($this->view->user_is_logged_in){
+      $this->view->products = Bootstrap::products_list();
       $this->view->render('index-user');
     }else{
       $this->view->render('index');

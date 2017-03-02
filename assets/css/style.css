@@ -10,3 +10,7 @@ ul li{line-height:2}
 .pull-side{float:right}
 
 #content p{margin:0;line-height:2}
+
+/* Products list */
+.products .product{float:left;width:50%;text-align:center;}
+.products .product h3{font-size:12pt}
